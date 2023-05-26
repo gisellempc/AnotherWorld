@@ -1,0 +1,801 @@
+fileFormatVersion: 2
+guid: 94806aebdb7241d46915c8eb4fc4f04e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fvfg-transformed_22
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 70
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4993df4526cd34a926abc778aa71eb
+      internalID: 1157253345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_23
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 70
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5913597898f8b9b4ab9a87eaee70f6ee
+      internalID: -446603788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_24
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 70
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d60efd389f8380458e028433bac2549
+      internalID: -1346270013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 70
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493230e1e1415904a9589a3a5feb25e7
+      internalID: -688265123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 70
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3679dc3aba0d424080a967435b2dad7
+      internalID: 978424623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_27
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 70
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f533407bd03b2747a026041f39e2d20
+      internalID: -1583669634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_28
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 70
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869668f00f5446047ad05c3d51ce1e8c
+      internalID: -1530127258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_29
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 70
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57c70ddf5900a84bab7cc2c4054b553
+      internalID: -1186226581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_30
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 70
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6cdc8d9de729740b45856915afca0f
+      internalID: 189099470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_31
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 70
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3cf6fbf2336d754199a25a7354351be
+      internalID: -1823957352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_32
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 70
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0727d76cb5916584fb1d00c8160a6dd6
+      internalID: 815192561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_35
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 48
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c198b4f81136a3449bc392f63d7a6ec
+      internalID: -92732019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_38
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 49
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95787f92af414746a4512fba480810d
+      internalID: -655877632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_39
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 48
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c2ab027f79b2041ad14ec758b81cc2
+      internalID: 1159461557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_44
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 26
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec0de53a3d9d9f41a1f9033585cdb75
+      internalID: -59021253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_46
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 26
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c61a4e561cb4744bd9d9d954201882
+      internalID: 212980025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_47
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 28
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eee1478e2737f74493e2dd20d56fd85
+      internalID: 1475919650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_48
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 28
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d336818f93e2a45a186c10389b50a8
+      internalID: -1674743640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_49
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 28
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf505619f4be6e499fb3fc9f7f6fa15
+      internalID: -1859019378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_55
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baaeab97920ef2e4ca7ae1ce289a95cb
+      internalID: -1082967816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_56
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 4
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865efe0db62fbc244897a71182e85c82
+      internalID: 55938895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_57
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 3
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bd12f7b6953974bb7e750c1bb8bf48
+      internalID: -936682934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_58
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 3
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084d219968dfd5744b73ac0068634d65
+      internalID: 1063681076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_59
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 3
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5809cf14327f21e45b678addf392185b
+      internalID: 1265329596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_60
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 3
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ae8b383e3fade47806acca82dd640c
+      internalID: 219906603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_61
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 3
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ecd42d06dcfd949a2b00065eb25ea6
+      internalID: 637942312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_62
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 3
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e1474f2c12b7f4ba348a12cc2588f2
+      internalID: -447196025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fvfg-transformed_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 26
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274a36ac60ced154cafbec42b6b23f32
+      internalID: -679323557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      fvfg-transformed_0: -679323557
+      fvfg-transformed_1: -596451598
+      fvfg-transformed_10: -1634153379
+      fvfg-transformed_11: 1994984091
+      fvfg-transformed_12: -526731024
+      fvfg-transformed_13: 1875493875
+      fvfg-transformed_14: 871871018
+      fvfg-transformed_15: -154665409
+      fvfg-transformed_16: 1004737665
+      fvfg-transformed_17: 436659458
+      fvfg-transformed_18: 1252289239
+      fvfg-transformed_19: -152200119
+      fvfg-transformed_2: 329855591
+      fvfg-transformed_20: -715603708
+      fvfg-transformed_21: -1555000186
+      fvfg-transformed_22: 1157253345
+      fvfg-transformed_23: -446603788
+      fvfg-transformed_24: -1346270013
+      fvfg-transformed_25: -688265123
+      fvfg-transformed_26: 978424623
+      fvfg-transformed_27: -1583669634
+      fvfg-transformed_28: -1530127258
+      fvfg-transformed_29: -1186226581
+      fvfg-transformed_3: 196650942
+      fvfg-transformed_30: 189099470
+      fvfg-transformed_31: -1823957352
+      fvfg-transformed_32: 815192561
+      fvfg-transformed_33: -1411517548
+      fvfg-transformed_34: 151200053
+      fvfg-transformed_35: -92732019
+      fvfg-transformed_36: -1397589372
+      fvfg-transformed_37: -203441352
+      fvfg-transformed_38: -655877632
+      fvfg-transformed_39: 1159461557
+      fvfg-transformed_4: 1161553235
+      fvfg-transformed_40: -294857966
+      fvfg-transformed_41: -1832170714
+      fvfg-transformed_42: -1136535199
+      fvfg-transformed_43: -1751886898
+      fvfg-transformed_44: -59021253
+      fvfg-transformed_45: 1858797243
+      fvfg-transformed_46: 212980025
+      fvfg-transformed_47: 1475919650
+      fvfg-transformed_48: -1674743640
+      fvfg-transformed_49: -1859019378
+      fvfg-transformed_5: 1019525114
+      fvfg-transformed_50: -246245754
+      fvfg-transformed_51: 194020953
+      fvfg-transformed_52: 1225189484
+      fvfg-transformed_53: 570357241
+      fvfg-transformed_54: -896558493
+      fvfg-transformed_55: -1082967816
+      fvfg-transformed_56: 55938895
+      fvfg-transformed_57: -936682934
+      fvfg-transformed_58: 1063681076
+      fvfg-transformed_59: 1265329596
+      fvfg-transformed_6: -514633526
+      fvfg-transformed_60: 219906603
+      fvfg-transformed_61: 637942312
+      fvfg-transformed_62: -447196025
+      fvfg-transformed_63: 732755765
+      fvfg-transformed_64: -2051955365
+      fvfg-transformed_65: 1420553158
+      fvfg-transformed_7: 1586162267
+      fvfg-transformed_8: -1913096516
+      fvfg-transformed_9: 1009244149
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
