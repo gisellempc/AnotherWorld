@@ -4,7 +4,10 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
 public class Player : MonoBehaviour
-{
+{    
+   
+    public UIManager _uiManager;
+
     [SerializeField]
     private float moveSpeed = 10f;
     private float movementX;
@@ -15,20 +18,22 @@ public class Player : MonoBehaviour
     private float jumpForce = 10f;
     private bool isGrounded;
     private int _hp = 5;
-    private int _score;
+     private int _score;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
         myBody = GetComponent<Rigidbody2D>();
+        _uiManager = FindObjectOfType<UIManager>();
     }
 
     void Update()
-    {
+    {       
         HandlePlayerMovement();
         HandleFacingDirection();
         HandlePlayerAnimation();
         HandleJumping();
+        _uiManager.SetScore(_score);
     }
 
     void HandlePlayerMovement()
@@ -96,12 +101,13 @@ public class Player : MonoBehaviour
     private void ReceiveDmg()
     {
         _hp--;
-        //_uiManager.SetHp(_hp);
+        _uiManager.SetHp(_hp);     
+            
 
         if (_hp <= 0)
         {
             Destroy(gameObject);
-            //_uiManager.ShowLooseScreen(_score);
+            _uiManager.ShowLooseScreen(_score);
             //_sfxPlayer.PlayOneShot(_gameOverSound);
 
         }

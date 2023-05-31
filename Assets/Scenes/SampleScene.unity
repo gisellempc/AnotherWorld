@@ -950,6 +950,7 @@ GameObject:
   - component: {fileID: 68837819}
   - component: {fileID: 68837818}
   - component: {fileID: 68837817}
+  - component: {fileID: 68837821}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1040,6 +1041,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &68837821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68837816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f492182baf27cd7459475587b4b463d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scoreTxt: {fileID: 1305183208}
+  _hpIndicators:
+  - {fileID: 681885403}
+  - {fileID: 649499095}
+  - {fileID: 2059850203}
+  - {fileID: 507176681}
+  - {fileID: 325439889}
+  loseScreen: {fileID: 345899222}
+  finalScoreTxt: {fileID: 1084868272}
 --- !u!1 &70959974
 GameObject:
   m_ObjectHideFlags: 0
@@ -2706,7 +2728,7 @@ GameObject:
   - component: {fileID: 325439890}
   - component: {fileID: 325439889}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Hp1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4751,7 +4773,7 @@ GameObject:
   - component: {fileID: 507176682}
   - component: {fileID: 507176681}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: Hp2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5374,7 +5396,7 @@ GameObject:
   - component: {fileID: 542350009}
   - component: {fileID: 542350008}
   m_Layer: 5
-  m_Name: Button
+  m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6333,7 +6355,7 @@ GameObject:
   - component: {fileID: 649499096}
   - component: {fileID: 649499095}
   m_Layer: 5
-  m_Name: Image (4)
+  m_Name: Hp4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6604,7 +6626,7 @@ GameObject:
   - component: {fileID: 681885404}
   - component: {fileID: 681885403}
   m_Layer: 5
-  m_Name: Image (5)
+  m_Name: Hp5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10125,7 +10147,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 9}
+  m_AnchoredPosition: {x: 88, y: 0}
   m_SizeDelta: {x: 509.8331, y: 59.1802}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1084868272
@@ -17074,7 +17096,7 @@ GameObject:
   - component: {fileID: 2059850204}
   - component: {fileID: 2059850203}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: Hp3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17760,6 +17782,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8814473520755092405, guid: 82624761737574647b4096204aa41668, type: 3}
+      propertyPath: _scoreTxt
+      value: 
+      objectReference: {fileID: 1305183208}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82624761737574647b4096204aa41668, type: 3}
 --- !u!1001 &5992850247115654757
