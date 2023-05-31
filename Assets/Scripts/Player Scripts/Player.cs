@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Player : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class Player : MonoBehaviour
     [SerializeField] 
     private float jumpForce = 10f;
     private bool isGrounded;
+    private int _hp = 5;
+    private int _score;
 
     private void Awake()
     {
@@ -68,5 +71,45 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag(TagManager.GROUND_TAG))
             isGrounded = true;
 
+        // detecting collision with the enemies
+        if (collision.gameObject.CompareTag(TagManager.ENEMY_TAG))
+            ReceiveDmg();
+        if (collision.gameObject.CompareTag(TagManager.WATER_TAG))
+        {
+            _hp = 0;
+           ReceiveDmg();
+        }
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        GameObject otherGO = collision.gameObject;
+
+        if (otherGO.tag == "Coin")
+        {
+            //_sfxPlayer.PlayOneShot(_gemSound);
+            MoneyGain();
+            Destroy(otherGO);
+        }
+    }
+    private void ReceiveDmg()
+    {
+        _hp--;
+        //_uiManager.SetHp(_hp);
+
+        if (_hp <= 0)
+        {
+            Destroy(gameObject);
+            //_uiManager.ShowLooseScreen(_score);
+            //_sfxPlayer.PlayOneShot(_gameOverSound);
+
+        }
+
+    }
+
+    private void MoneyGain()
+    {
+        _score++;
     }
 }

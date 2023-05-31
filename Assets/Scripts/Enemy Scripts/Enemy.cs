@@ -5,7 +5,6 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    private float movementX;
     private Vector3 tempScale;
 
     private Rigidbody2D myBody;
@@ -20,19 +19,29 @@ public class Enemy : MonoBehaviour
         HandleFacingDirection();
     }
     void FixedUpdate()
-    {
-        myBody.velocity = new Vector2(moveSpeed, myBody.velocity.y) ;
+    {       
+        myBody.velocity = new Vector2(moveSpeed, myBody.velocity.y) ;     
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        GameObject otherGO = collision.gameObject;
 
+        if (otherGO.tag == "Cactus")
+        {
+            moveSpeed *= -1;
+        }
+    }
     void HandleFacingDirection()
     {
         tempScale = transform.localScale;
 
-        if (movementX > 0)
+        if (moveSpeed < 0)
             tempScale.x = Mathf.Abs(tempScale.x);
-        else if (movementX < 0)
+        else if (moveSpeed > 0)
             tempScale.x = -Mathf.Abs(tempScale.x);
 
         transform.localScale = tempScale;
     }
+
+   
 }

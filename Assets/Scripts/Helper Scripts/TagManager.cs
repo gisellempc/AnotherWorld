@@ -12,5 +12,5 @@ public static class TagManager
     public static string GROUND_TAG = "Ground";
     public static string PLAYER_TAG = "Player";
     public static string ENEMY_TAG = "Enemy";
-
+    public static string WATER_TAG = "Water";
 }
