@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
@@ -10,12 +11,8 @@ public class UIManager : MonoBehaviour
     public Image[] _hpIndicators;
     public GameObject loseScreen;
     public TMPro.TextMeshProUGUI finalScoreTxt;
-
-    void Update()
-    {
-       
-    }
-
+    public TMPro.TextMeshProUGUI winScoreTxt;
+    public GameObject winScreen;
     public void SetScore(int newScore)
     {
         _scoreTxt.text = "Score: " + newScore.ToString();
@@ -36,5 +33,17 @@ public class UIManager : MonoBehaviour
     {
         loseScreen.SetActive(true);
         finalScoreTxt.text = "Final Score: " + score;
+    }
+
+    public void ShowWinScreen(int score)
+    {
+        winScreen.SetActive(true);
+        winScoreTxt.text = "Final Score: " + score;
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1.0f;
     }
 }

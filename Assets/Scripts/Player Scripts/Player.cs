@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,7 @@ using UnityEngine.SocialPlatforms.Impl;
 public class Player : MonoBehaviour
 {    
    
-    public UIManager _uiManager;
+    private UIManager _uiManager;
 
     [SerializeField]
     private float moveSpeed = 10f;
@@ -14,16 +15,19 @@ public class Player : MonoBehaviour
     private Vector3 tempScale;
     private Animator anim;
     private Rigidbody2D myBody;
+    private SpriteRenderer m_SpriteRenderer;
     [SerializeField] 
     private float jumpForce = 10f;
     private bool isGrounded;
     private int _hp = 5;
-     private int _score;
+    private int _score;
+    private bool isFlickerEnabled = false;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
         myBody = GetComponent<Rigidbody2D>();
+        m_SpriteRenderer = GetComponent<SpriteRenderer>();
         _uiManager = FindObjectOfType<UIManager>();
     }
 
@@ -33,13 +37,17 @@ public class Player : MonoBehaviour
         HandleFacingDirection();
         HandlePlayerAnimation();
         HandleJumping();
-        _uiManager.SetScore(_score);
+
+
+            _uiManager.SetScore(_score);
+        
+       
     }
 
     void HandlePlayerMovement()
     {
         movementX = Input.GetAxisRaw(TagManager.HORIZONTAL_AXIS);
-        transform.position += new Vector3(movementX, 0f, 0f) * moveSpeed * Time.deltaTime;
+        transform.position += moveSpeed * Time.deltaTime * new Vector3(movementX, 0f, 0f);
     }
 
     void HandleFacingDirection()
@@ -78,7 +86,10 @@ public class Player : MonoBehaviour
 
         // detecting collision with the enemies
         if (collision.gameObject.CompareTag(TagManager.ENEMY_TAG))
+        {
             ReceiveDmg();
+            StartCoroutine(colorFlickerRoutine()); 
+        }
         if (collision.gameObject.CompareTag(TagManager.WATER_TAG))
         {
             _hp = 0;
@@ -91,26 +102,45 @@ public class Player : MonoBehaviour
     {
         GameObject otherGO = collision.gameObject;
 
-        if (otherGO.tag == "Coin")
+        if (otherGO.CompareTag("Coin"))
         {
             //_sfxPlayer.PlayOneShot(_gemSound);
             MoneyGain();
             Destroy(otherGO);
         }
+
+        if (otherGO.CompareTag("Flag"))
+        {
+            _uiManager.ShowWinScreen(_score);
+            Time.timeScale = 0;
+        }
+    }
+    private IEnumerator colorFlickerRoutine()
+    {
+        while (isFlickerEnabled == true)
+        {
+            m_SpriteRenderer.color = Color.red;
+            yield return new WaitForSeconds(0.5f);
+            m_SpriteRenderer.color = Color.white;
+            yield return new WaitForSeconds(0.5f);
+            isFlickerEnabled = false;
+        }
     }
     private void ReceiveDmg()
     {
+        isFlickerEnabled = true;
         _hp--;
-        _uiManager.SetHp(_hp);     
-            
+        _uiManager.SetHp(_hp);
+        
 
         if (_hp <= 0)
         {
             Destroy(gameObject);
             _uiManager.ShowLooseScreen(_score);
+            Time.timeScale = 0;
             //_sfxPlayer.PlayOneShot(_gameOverSound);
-
-        }
+            
+        }       
 
     }
 

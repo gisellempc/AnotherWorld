@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,7 +27,7 @@ public class Enemy : MonoBehaviour
     {
         GameObject otherGO = collision.gameObject;
 
-        if (otherGO.tag == "Cactus")
+        if (otherGO.CompareTag("Cactus"))
         {
             moveSpeed *= -1;
         }
@@ -42,6 +43,4 @@ public class Enemy : MonoBehaviour
 
         transform.localScale = tempScale;
     }
-
-   
 }
